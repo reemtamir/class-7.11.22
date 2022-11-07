@@ -12,7 +12,7 @@ const CounterList = ({ counters }) => {
                 maxValue={counter.max}
                 startValue={counter.start}
                 stepsValue={counter.steps}
-                key={index + 1}
+                key={index}
               />
             </div>
           );
