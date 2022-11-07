@@ -1,14 +1,11 @@
 import { useState } from 'react';
 
-function Counter(
-  {
-    minValue = Number.MIN_SAFE_INTEGER,
-    maxValue = Number.MAX_SAFE_INTEGER,
-    startValue = 0,
-    stepsValue = 1,
-  },
-
-) {
+function Counter({
+  minValue = Number.MIN_SAFE_INTEGER,
+  maxValue = Number.MAX_SAFE_INTEGER,
+  startValue = 0,
+  stepsValue = 1,
+}) {
   const [counter, setCounter] = useState(startValue);
   const isNotAtMin = counter - stepsValue >= minValue;
   const isNotAtMax = counter + stepsValue <= maxValue;
